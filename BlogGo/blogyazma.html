@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogGo-BlogYaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!------------------------------- ana sayfa --------------------------------->
+ <a href="index.html"> <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <lord-icon
+      src="https://cdn.lordicon.com/slduhdil.json"
+      trigger="hover"
+      colors="primary:#121331"
+      style="width:50px;height:50px"
+      class="lord-icon3">
+  </lord-icon>
+  </lord-icon></a>
+  <!--------------------------------- srch ---------------------------------->
+  <div class="wrap">
+    <div class="search">
+       <input type="text" class="searchTerm" placeholder="Ne arıyorsunuz?">
+       <button type="submit" class="searchButton">
+      </button>
+    </div>
+ </div>
+ <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/nocvdjmh.json"
+    trigger="hover"
+    colors="primary:#121331"
+    style="width:50px;height:50px"
+    class="lord-icon1">
+</lord-icon>
+ <!--------------------------------- sign in sign up (btn) ---------------------------------->
+ <a class="link-btn-grs-kyt" href="grs-kyt.html"><button class="btn-kyt">Kayıt Ol !</button></a>
+ <a class="link-btn-grs-kyt" href="grs-kyt.html"><button class="btn-grs">Giriş Yap !</button></a>
+ <!------------------------------------ blog yazma (btn) -------------------------------------------------->
+ <a class="link-btn-grs-kyt" href="blogyazma.html"><button class="btn-blog-yazma">Blog Yaz !</button></a>
+    <!--------------------------------- menü ---------------------------------->
+    <div id="YanMenu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+    
+      &times;</a>
+    
+      <a href="index.html">Anasayfa</a>
+      <a href="iletişim.html">İletişim</a>
+      <a href="hakkımızda.html">Hakkımızda</a>
+      <a href="bloglar.html">Bloglar</a>
+      <a href="#">Takip edilenler</a>
+      <a href="#"><div id="kutu"></div></a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+    &#9776;
+    </span>
+      <!-------------------------------- blog yazma --------------------------------------->
+      <div class="div-txt-blog" contenteditable="true"></div>
+      <!------------------------------ takip etmek ---------------------------------------->
+      <button class="btn-blog-kaydet" onclick="gizliDivGoster()">Kaydet !</button>
+      <!------------------------------------------------ renk seçici -------------------------------------------------->
+        <p class="renk-yazi">Renk</p>
+        <p class="seçmek-yazi">seçmek</p>
+        <p class="ister-yazi">ister</p>
+        <p class="misin-yazi">misin ?</p>
+        <input type="color" id="colorPicker" name="picker" value="#f6b73c" class="inp-renk">
+        
+    <script src="script2.js"></script>
+    <script src="script4.js"></script>
+</body>
+</html>

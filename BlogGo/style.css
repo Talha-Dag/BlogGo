@@ -1,0 +1,634 @@
+body{
+  background-image: url(img/rm118-ken-09a.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/*******************************************************  menü ********************************************************/
+
+.sidenav {
+    height: 100%;
+    width: 0; /*Genişliği javascriptle değiştir*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
+    transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
+    padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  /*Menüler üzerine gelince  renklerini değiştirin */
+  
+  .sidenav a:hover {
+    color: #f1f1f1; 
+  }
+  /*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
+  sidenav stilini değiştirin 
+  (daha az dolgu ve daha küçük bir yazı tipi boyutu) */
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .menü-çentik{
+    background-color: #30A9DE;
+    height: 50px;
+  }
+  /********************************************************* hareketli ana başlık (h1) **********************************************/
+  .h11{
+    display: inline-flex;
+    font-family: Impact, Haettenschweiler, sans-serif;
+    background: url(img/fuşyabloggo.PNG);
+    font-size: 8rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #5b728a54;
+    animation: move 30s linear infinite;
+    letter-spacing: .3rem;
+    position: absolute;
+    margin-top: 6%;
+    left: 39%;
+    
+}
+@keyframes move{
+    from{background-position: 0 80%;}
+    to{background-position: 100% 50%;}
+}
+/********************************************************* yazı ve arkası *******************************************************/
+p, h2{
+    position: relative;
+    margin: 20px 5%;
+}
+.div-arka-gri{
+  background-color: #e4ddd4;
+    height: 500px;
+    margin-top: 25%;
+}
+.div-arka-gri1{
+  background-color: #e4ddd4;
+    height: 550px;
+    margin-top: 25%;
+}
+/********************************************************* fotolar *******************************************************/
+.img-div{
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/********************************************* srch *******************************************************/
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid black;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid black;
+  background: black;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 4%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+}
+/*********************************************************** giriş kayıt ol ****************************************************************/
+.btn-kyt{
+  width: 80px;
+  height: 40px;
+  background-color: #111;
+  color: #f1f1f1;
+  border-radius: 6px;
+  position: absolute;
+  left: 82%;
+  top: 2%;
+}
+.btn-grs{
+  width: 80px;
+  height: 40px;
+  background-color: #111;
+  color: #f1f1f1;
+  border-radius: 6px;
+  position: absolute;
+  left: 88%;
+  top: 2%;
+}
+.link-btn-grs-kyt{
+  color: #f1f1f1;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
+
+
+#user-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+}
+
+.arka-kyt-grs{
+  margin-top: 7%;
+  -webkit-backdrop-filter: blur(5px);backdrop-filter: blur(5px);
+  text-align: center;
+  align-items: center;
+}
+
+.all-inp{
+  background-color: black;
+  color: #f1f1f1;
+  border-radius: 6px;
+  border: none;
+  height: 30px;
+  width: 200px;
+}
+
+.all-kyt-grs-yazi{
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+.all-kyt-grs-btn{
+  background-color: black;
+  font-size: 15px;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+  width: 70px;
+}
+
+.img-grs-kyt{
+  position: absolute;
+  right: 1%;
+  height: 50px;
+  width: 50px;
+}
+
+.lord-icon{
+  position: absolute;
+  right: 14%;
+}
+
+.lord-icon1{
+  position: absolute;
+  right: 25%;
+}
+
+.lord-icon3{
+  position: absolute;
+  right: 2%;
+}
+/************************************************************ takip et takipten çık *********************************************************/
+.div-arka-yaz{
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  left: 17%;
+  top: 15%;
+  border-radius: 6px;
+}
+
+.btn-yaz-sil{
+  background-color: black;
+  font-size: 15px;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+  width: 120px;
+  position: absolute;
+  top: 80%;
+  left: 9%;
+}
+
+.btn-yaz-sil1{
+  background-color: black;
+  font-size: 15px;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  height: 30px;
+  width: 120px;
+  position: absolute;
+  top: 80%;
+  right: 9%;
+}
+
+.isim-div{
+  font-size: 20px;
+}
+
+.yazı-p{
+  position: absolute;
+  top: 15%;
+  left: 9%;
+  background-color: #111;
+  height: 150px;
+  width: 200px;
+  color: #f1f1f1;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.gizli {
+  display: none;
+}
+
+.lord-icon4{
+  position: absolute;
+  left: 83%;
+  top: 3%;
+}
+/**************************************************** blog yazma (btn) ************************************************************/
+.btn-blog-yazma{
+  width: 80px;
+  height: 40px;
+  background-color: #111;
+  color: #f1f1f1;
+  border-radius: 6px;
+  position: absolute;
+  left: 76%;
+  top: 2%;
+}
+/****************************************************** blog yazma ****************************************************************/
+.div-txt-blog{
+  -webkit-backdrop-filter: blur(5px);backdrop-filter: blur(5px);
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 300px;
+  margin-top: 20px;
+}
+
+/***************************************************** blog yazma kaydet(btn)******************************************************/
+.btn-blog-kaydet{
+  width: 80px;
+  height: 40px;
+  background-color: #111;
+  color: #f1f1f1;
+  border-radius: 6px;
+  margin-top: 20%;
+  margin-left: 48%;
+}
+/************************************************************ renk (inp) ***********************************************************/
+.inp-renk{
+  position: absolute;
+  top: 52.5%;
+  left: 1%;
+}
+/************************************************ renk seçmek ister misin  ? ********************************************************/
+
+.renk-yazi{
+  color: brown;
+  position: fixed;
+  top: 50%;
+}
+.seçmek-yazi{
+  color: coral;
+  position: fixed;
+  top: 50%;
+  left: 3%;
+
+}
+.ister-yazi{
+  color: chocolate;
+  position: fixed;
+  top: 50%;
+  left: 6.5%;
+
+}
+.misin-yazi{
+  color: darkgoldenrod;
+  position: fixed;
+  top: 50%;
+  left: 8.5%;
+
+}
+/******************************************************* iletişim sayfası ********************************************/
+.iletişim-sayfası-arka{
+  -webkit-backdrop-filter: blur(5px);backdrop-filter: blur(5px);
+  text-align: center;
+  align-items: center;
+}
+.p-iletisim{
+  font-size: 20px;
+  color: black;
+}
+.link-iletisim{
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 0.5%;
+  text-decoration:none
+}
+.yazı-baslık-yandan{
+  text-align:left;
+}
+.h1-iletisim{
+  font-size: 80px;
+}
+.link-iletisim-insta-link{
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 0.5%;
+  text-decoration:none
+}
+/************************************************************ hakkımızda **************************************************************/
+.div-hakkımızda{
+  -webkit-backdrop-filter: blur(5px);backdrop-filter: blur(5px);
+}
+.h1-hakkımızda-left{
+  text-align: center;
+  font-size: 50px;
+}
+.h2-hakkımızda-left{
+  text-align: left;
+  font-size: 50px;
+  margin-top: 5%;
+}
+.p-hakkımızda{
+  font-size: 20px;
+  text-align: center;
+}
+.p-hakkımızda1{
+  font-size: 20px;
+  text-align: left;
+}
+.ekibimiz-h3-hakkımızda{
+  text-align: center;
+  font-size: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-basic {
+  margin: 0 2rem 1rem 0;
+  padding: 0 0 0.5rem 0;
+  width: 15rem;
+  background: #fff;
+  color: #444;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+  overflow: hidden;
+  transition: all 0.1ms ease-in-out;
+}
+.card-basic:hover{
+  transform: scale(1.02);
+}
+
+.card-header {
+  height: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+
+.header-basic,
+.btn-basic {
+  background: linear-gradient(135deg, rgb(26, 26, 26), gray);
+}
+
+.card-body {
+  padding: 0.5rem 0;
+}
+.card-body h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card-element-container {
+  color: #444;
+  list-style: none;
+}
+
+.btn {
+  margin: 0.5rem 0;
+  padding: 0.7rem 1rem;
+  outline: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+.card-element-hidden {
+  display: none;
+}
+/********************************************************** bloglar üç nokta *********************************************************************/
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  top: 7%;
+  left: 35%;
+}
+
+.dots {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dot {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px; /* Dropdown menünün üç nokta simgelerinin altında yer alması için ayarlayabilirsiniz */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.dropdown-menu li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+#popupContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  z-index: 9999;
+}
+
+#popupBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkbox-sikayet{
+  width: 20px;
+  height: 20px;
+}
+.p-sikayet{
+  font-size: 20px;
+  padding: 0%;
+  margin: 0%;
+  display: inline-block;
+}
+
+#popupContainer1 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  z-index: 9999;
+}
+
+#popupBox1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#closeButton1 {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.ilgi-sikayet-dots{
+  height: 25px;
+  width: 110px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+.ilgi-link-sikayet{
+  text-decoration: none;
+}
+.gonder-btn-sikayet{
+  margin-top: 15%;
+  margin-left: 40%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+/********************************************* index yazı **************************************/
+.index-yazılar-p{
+  font-size: 20px;
+}
+.index-yazılar-h2{
+  font-size: 25px;
+}

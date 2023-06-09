@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogGo-Bloglar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!------------------------------- ana sayfa --------------------------------->
+<a href="index.html"> <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <lord-icon
+      src="https://cdn.lordicon.com/slduhdil.json"
+      trigger="hover"
+      colors="primary:#121331"
+      style="width:50px;height:50px"
+      class="lord-icon3">
+  </lord-icon>
+  </lord-icon></a>
+  <!--------------------------------- srch ---------------------------------->
+  <div class="wrap">
+    <div class="search">
+       <input type="text" class="searchTerm" placeholder="Ne arıyorsunuz?">
+       <button type="submit" class="searchButton">
+      </button>
+    </div>
+ </div>
+ <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/nocvdjmh.json"
+    trigger="hover"
+    colors="primary:#121331"
+    style="width:50px;height:50px"
+    class="lord-icon1">
+</lord-icon>
+ <!--------------------------------- sign in sign up (btn) ---------------------------------->
+ <a class="link-btn-grs-kyt" href="grs-kyt.html"><button class="btn-kyt">Kayıt Ol !</button></a>
+ <a class="link-btn-grs-kyt" href="grs-kyt.html"><button class="btn-grs">Giriş Yap !</button></a>
+ <!------------------------------------ blog yazma (btn) -------------------------------------------------->
+ <a class="link-btn-grs-kyt" href="blogyazma.html"><button class="btn-blog-yazma">Blog Yaz !</button></a>
+    <!--------------------------------- menü ---------------------------------->
+    <div id="YanMenu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+    
+      &times;</a>
+    
+      <a href="index.html">Anasayfa</a>
+      <a href="iletişim.html">İletişim</a>
+      <a href="hakkımızda.html">Hakkımızda</a>
+      <a href="bloglar.html">Bloglar</a>
+      <a href="#">Takip edilenler</a>
+      <a href="#"><div id="kutu"></div></a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+    &#9776;
+    </span>
+      <!--------------------------------------- takip etmek ----------------------------------------------->
+    <div class="div-arka-yaz gizli" id="gizliDiv">
+      <a href="#" onclick="gizleGoster('sonuc');">     
+       <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/pnhskdva.json"
+            trigger="hover"
+            colors="primary:#121331"
+            style="width:45px;height:45px"
+            class="lord-icon4">
+        </lord-icon>
+      </a>
+
+        <a href="#" id="sonuc" style="display: none;" onclick="gizleGoster('sonuc');">
+          <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+          <lord-icon
+              src="https://cdn.lordicon.com/xryjrepg.json"
+              trigger="hover"
+              colors="primary:#121331"
+              style="width:45px;height:45px"
+              class="lord-icon4">
+          </lord-icon>
+        </a>
+        <div>
+          <p class="isim-div">Talha Dağ</p>
+          <div>
+              <p class="yazı-p">merhaba bugün insiderda sunum yapıyorum</p>
+          </div>
+          <button id="btnyaz" class="btn-yaz-sil">Takip et +</button>
+          <button id="btnsil" class="btn-yaz-sil1">Takip'den çık -</button>
+
+          <div class="dropdown">
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <ul class="dropdown-menu">
+              <button class="ilgi-sikayet-dots" onclick="showPopup()">Şikayet Et</button>
+<div id="popupContainer">
+  <div id="popupBox">
+    <button id="closeButton" onclick="hidePopup()">X</button>
+    <!-- Kutucuk içeriği -->
+    <div>
+      <input type="checkbox" class="checkbox-sikayet">
+      <p class="p-sikayet">Uygunsuz isim</p>
+    </div>
+
+    <br>
+
+    <div>
+      <input type="checkbox" class="checkbox-sikayet">
+      <p class="p-sikayet">Uygunsuz Soyisim</p>
+    </div>
+
+    <br>
+
+    <div>
+      <input type="checkbox" class="checkbox-sikayet">
+      <p class="p-sikayet">Uygunsuz İçerik</p>
+    </div>
+
+    <br>
+
+    <div>
+      <input type="checkbox" class="checkbox-sikayet">
+      <p class="p-sikayet">Irkçı Söylem</p>
+    </div>
+
+    <br>
+    
+    <div>
+      <input type="checkbox" class="checkbox-sikayet">
+      <p class="p-sikayet">Hakaret İçeren Metin</p>
+    </div>
+
+    <br>
+
+    <div>
+      <input type="checkbox" class="checkbox-sikayet">
+      <p class="p-sikayet">Saygı Sınırını Aşan Metin</p>
+    </div>
+
+    <br>
+    
+    <div>
+      <input type="checkbox" class="checkbox-sikayet">
+      <p class="p-sikayet">Din,Dil Gibi Kişiye Özel Seçimleri Etkileyen Söylem</p>
+    </div>
+
+    <br>
+
+    <div>
+      <input type="checkbox" class="checkbox-sikayet">
+      <p class="p-sikayet">Siyasi İçerik</p>
+    </div>
+
+    <button onclick="showPopup1()" class="gonder-btn-sikayet">Gönder</button>
+<div id="popupContainer1">
+  <div id="popupBox1">
+    <button id="closeButton1" onclick="hidePopup1()">X</button>
+    <!-- Kutucuk içeriği -->
+    <div>
+      <h1>Şikayetiniz gönderilmiştir</h1>
+      <p class="p-sikayet">Teşekkür Ederiz</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+              <br><br>
+              <a href="bloglar.html" class="ilgi-link-sikayet"><button class="ilgi-sikayet-dots"><li>İlgilenmiyorum</li></button></a>
+            </ul>
+          </div>
+          
+        </div>
+      
+      <script src="script3.js"></script>
+</body>
+</html>

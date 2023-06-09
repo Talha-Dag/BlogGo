@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogGo-Giriş-Kayıt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!------------------------------- ana sayfa --------------------------------->
+ <a href="index.html"> <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <lord-icon
+      src="https://cdn.lordicon.com/slduhdil.json"
+      trigger="hover"
+      colors="primary:#121331"
+      style="width:50px;height:50px"
+      class="lord-icon3">
+  </lord-icon>
+  </lord-icon></a>
+  <!--------------------------------- srch ---------------------------------->
+  <div class="wrap">
+    <div class="search">
+       <input type="text" class="searchTerm" placeholder="Ne arıyorsunuz?">
+       <button type="submit" class="searchButton">
+      </button>
+    </div>
+ </div>
+ <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/nocvdjmh.json"
+    trigger="hover"
+    colors="primary:#121331"
+    style="width:50px;height:50px"
+    class="lord-icon1">
+</lord-icon>
+ <!--------------------------------- sign in sign up (btn) ---------------------------------->
+ <a class="link-btn-grs-kyt" href="grs-kyt.html"><button class="btn-kyt">Kayıt Ol !</button></a>
+ <a class="link-btn-grs-kyt" href="grs-kyt.html"><button class="btn-grs">Giriş Yap !</button></a>
+ <!------------------------------------ blog yazma (btn) -------------------------------------------------->
+ <a class="link-btn-grs-kyt" href="blogyazma.html"><button class="btn-blog-yazma">Blog Yaz !</button></a>
+    <!--------------------------------- menü ---------------------------------->
+    <div id="YanMenu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+    
+      &times;</a>
+    
+      <a href="index.html">Anasayfa</a>
+      <a href="iletişim.html">İletişim</a>
+      <a href="hakkımızda.html">Hakkımızda</a>
+      <a href="bloglar.html">Bloglar</a>
+      <a href="#">Takip edilenler</a>
+      <a href="#"><div id="kutu"></div></a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+    &#9776;
+    </span>
+<!----------------------------- giriş kayıt ekranı -------------------------->
+  <div class="arka-kyt-grs">
+    <h2>Kullanıcı Kaydı</h2>
+    <form id="register-form">
+      <label for="name" class="all-kyt-grs-yazi">İsim:</label>
+      <input class="all-inp" type="text" id="name" required placeholder="İsim">
+      <label for="surname" class="all-kyt-grs-yazi">Soyisim:</label>
+      <input class="all-inp" type="text" id="surname" required placeholder="Soyisim">
+      <label for="email" class="all-kyt-grs-yazi">E-posta:</label>
+      <input class="all-inp" type="email" id="email" required placeholder="E-posta">
+      <label for="password" class="all-kyt-grs-yazi">Şifre:</label>
+      <input class="all-inp" type="password" id="password" required placeholder="Şifre">
+      <br>
+      <input type="submit" value="Kayıt Ol" class="all-kyt-grs-btn">
+      <img src="img/id-card.png" class="img-grs-kyt">
+    </form>
+  </div>
+  <div class="arka-kyt-grs">
+    <h2>Giriş Yap</h2>
+    <form id="login-form">
+      <label for="login-email" class="all-kyt-grs-yazi">E-posta:</label>
+      <input class="all-inp" type="email" id="login-email" required required placeholder="E-posta">
+      <label for="login-password" class="all-kyt-grs-yazi">Şifre:</label>
+      <input class="all-inp" type="password" id="login-password" required required placeholder="Şifre">
+      <br>
+      <input type="submit" value="Giriş Yap" class="all-kyt-grs-btn">
+      <img src="img/verification-symbol-of-a-man.png" class="img-grs-kyt">
+    </form>
+  </div>
+    <script src="script1.js"></script>
+</body>
+</html>
