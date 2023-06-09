@@ -8,6 +8,6 @@ I'am currently working on BlogGo
 
 What is BlogGo?
 
-BlogGo is a free online site where you can write using the necessary customizations.
+In short, BlogGo is a free online site where you can write using the necessary customizations.
 
 
